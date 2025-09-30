@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Text, View, Button, Alert } from "react-native";
 
 export default function Index() {
   return (
@@ -10,6 +10,10 @@ export default function Index() {
       }}
     >
       <Text>Hola mundo.</Text>
+      <Button
+        title="Mostrar alerta"
+        onPress={() => Alert.alert("Alerta", "Hola mundo")}
+      />
     </View>
   );
 }
