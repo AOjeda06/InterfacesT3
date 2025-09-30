@@ -1,5 +1,9 @@
 import { Text, View, Button, Alert } from "react-native";
 
+function alerta(title: string, message: string) {
+  alert(title + message);
+}
+
 export default function Index() {
   return (
     <View
@@ -12,7 +16,7 @@ export default function Index() {
       <Text>Hola mundo.</Text>
       <Button
         title="Mostrar alerta"
-        onPress={() => Alert.alert("Alerta", "Hola mundo")}
+        onPress={() => alerta("Alerta", ", Hola mundo")}
       />
     </View>
   );
